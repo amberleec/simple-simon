@@ -2,7 +2,8 @@
  * Created by Amberlee on 5/3/17.
  */
 
-$(document).ready(function(){
+
+// $(document).ready(function(){
     "use strict";
 
 
@@ -11,7 +12,7 @@ $(document).ready(function(){
         currentSeq : [],
         level: 0
     };
-    var i;
+
     var userSeq = [];
 
 
@@ -35,10 +36,6 @@ $(document).ready(function(){
     }
 
 
-
-    function playGame() {
-
-    }
 
 
     $('.colors').click(function () {
@@ -81,6 +78,4 @@ $(document).ready(function(){
         animateSeq();
     });
 
-
-});
 
