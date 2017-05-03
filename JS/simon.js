@@ -21,13 +21,12 @@ $(document).ready(function(){
         console.log(game.currentSeq);
     }
 
-    function newGame() {
+    function tryAgain() {
         game.currentSeq = [];
         game.level = 0;
     }
 
     function animateSeq(selector){
-        //console.log(game.currentSeq);
         $('#' + game.currentSeq).animate({
             opacity: 0.5
         }, 500).animate({
