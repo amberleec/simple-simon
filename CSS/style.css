@@ -17,26 +17,26 @@
 }
 
 #blueButton {
-    width: 30vw;
-    height: 30vh;
+    width: 30px;
+    height: 30px;
     background-color: blue;
 }
 
 #yellowButton {
-    width: 30vw;
-    height: 30vh;
+    width: 30px;
+    height: 30px;
     background-color: yellow;
 }
 
 #greenButton {
-    width: 30vw;
-    height: 30vh;
+    width: 30px;
+    height: 30px;
     background-color: green;
 }
 
 #redButton {
-    width: 30vw;
-    height: 30vh;
+    width: 30px;
+    height: 30px;
     background-color: red;
 }
 
@@ -51,23 +51,20 @@
 }
 
 #btn1 {
-    width: 20vw;
-    height: 20vh;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background-color: black;
+    background-color: lightskyblue;
     color: darkslategray;
     font-size: 3rem;
 }
 
-#btn1 {
-    width: 20vw;
-    height: 20vh;
+#btn2 {
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background-color: black;
+    background-color: lightskyblue;
     color: darkslategray;
     font-size: 3rem;
 }
 
-#tryAgain {
-    display: none;
-}
