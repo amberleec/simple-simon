@@ -4,33 +4,36 @@ h1 {
     text-align: center;
 }
 
-#green {
+#greenButton {
     border: dotted lightgreen 2px;
     background-color: green;
     width: 400px;
     height: 400px;
-    margin-left: 200px;
+    margin-left: 500px;
 }
 
-#red {
+#redButton {
     border: dotted lightcoral 2px;
     background-color: red;
-    width: 150px;
-    height: 150px;
-    ma
+    width: 400px;
+    height: 400px;
+    margin-left: 500px;
 }
 
-#blue {
+#blueButton {
     border: dotted lightskyblue 2px;
     background-color: blue;
-    width: 150px;
-    height: 150px;
+    width: 400px;
+    height: 400px;
+    margin-left: 905px;
+    margin-top: -809px;
 }
 
-#yellow {
+#yellowButton {
     border: dotted lightyellow 2px;
     background-color: yellow;
-    width: 150px;
-    height: 150px;
+    width: 400px;
+    height: 400px;
+    margin-left: 905px;
 }
 
