@@ -2,52 +2,86 @@
  * Created by Amberlee on 5/3/17.
  */
 
-(function() {
-    var btn = document.getElementsByClassName('btn'),
-        start = document.getElementById('start'),
-        reset = document.getElementById('reset'),
-        counter = document.getElementById('counter'),
-        pattern = [],
-        userPattern = [],
-        sound0 = new Audio(''),
-        sound1 = new Audio(''),
-        sound2 = new Audio(''),
-        sound3 = new Audio('');
+$(document).ready(function(){
+    "use strict";
 
-    function displayCounter() {
-        counter.innerHTML = pattern.length;
+
+    var game = {
+        possibleSeq : ['blue', 'red', 'yellow', 'green'],
+        currentSeq : [],
+        level: 0
+    };
+    var i;
+    var userSeq = [];
+
+
+
+    function newSeq(){
+        game.currentSeq.push(game.possibleSeq[(Math.floor(Math.random()*4))]);
+        console.log(game.currentSeq);
     }
 
-    function generateNum() {
-        return Math.floor(Math.random() * 4);
+    function newGame() {
+        game.currentSeq = [];
+        game.level = 0;
     }
 
-    for (var i = 0; i < btn.length; i++) {
-        btn [i].addEventListener('mouseDown', function(e) {
-            e.target.className += " lighten";
-            if (e.target.id === 'redButton') {
-                sound0.play();
-            } else if (e.target.id === 'yellowButton') {
-                sound1.play();
-            } else if (e.target.id === 'greenButton') {
-                sound2.play();
-            } else if (e.target.id === 'blueButton') {
-                sound3.play();
+    function animateSeq(selector){
+        //console.log(game.currentSeq);
+        $('#' + game.currentSeq).animate({
+            opacity: 0.5
+        }, 500).animate({
+            opacity: 1
+        }, 500)
+    }
+
+
+
+    function playGame() {
+
+    }
+
+
+    $('.colors').click(function () {
+        if ($(this).attr('id') === game.currentSeq[userSeq++]) {
+            if (userSeq === game.currentSeq.length) {
+                console.log("success");
+                $('#newRound').show();
             }
-        });
-
-
-    start.addEventListener('click', function() {
-        if (pattern.length === 0) {
-            pattern.push(generateNum());
-            displayCounter();
-            simulateClick(btn[pattern[0]]);
         }
     });
 
-    reset.addEventListener('click', function() {
-        pattern = [];
-        userPattern = [];
-        displayCounter();
+
+
+
+    $('#beginGame').click(function () {
+        newGame();
+        newSeq();
+        animateSeq();
     });
+
+    $('#blueButton').click(function () {
+        animateSeq('#blueButton');
+    });
+
+    $('#yellowButton').click(function () {
+        animateSeq('#yellowButton');
+    });
+
+    $('#greenButton').click(function () {
+        animateSeq('#greenButton');
+    });
+
+    $('#redButton').click(function () {
+        animateSeq('#redButton');
+    });
+
+    $('#tryAgain').click(function () {
+        $('#tryAgain').hide();
+        newSeq();
+        animateSeq();
+    });
+
+
+});
 

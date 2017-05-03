@@ -1,61 +1,89 @@
-body {
-    background: wheat;
-}
-
-#gameBoard {
+#grid {
+    display: flex;
+    width: 90%;
+    max-width: 100%;
     margin: auto;
-    width: 250px;
-    height: 250px;
-    border: 2px solid mediumaquamarine;
+    flex-direction: column;
 }
 
-#commands {
+#headerContainer {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    justify-content: center;
+    display: inline-block;
+}
+
+h1 {
     text-align: center;
-    margin-top: -50px;
-}
-button {
-    margin: 0 5px;
-    width: 60px;
-    background: black;
-    color: darkgrey;
-    font-size: 10px;
-    border-radius: 10px;
+    font-size: 3rem;
 }
 
-.btn {
-    width: 150px;
-    height: 150px;
-    border: 3px solid black;
+#game-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 4em;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
 }
 
-#redButton {
-    border-top-left-radius: 100%;
-    background: red;
-}
+#gameTop #gameBottom {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 100%;
+    margin: auto;
+    position: absolute;
 
-#yellowButton {
-    border-top-right-radius: 100%;
-    background: yellow;
-}
-
-#greenButton {
-    border-bottom-left-radius: 100%;
-    background: green;
 }
 
 #blueButton {
-    border-bottom-right-radius: 100%;
-    background: blue;
+    width: 30vw;
+    height: 30vh;
+    background-color: blue;
 }
 
-#middle {
-    position: relative;
-    background: black;
-    color: lightskyblue;
-    height: 60px;
-    width: 60px;
+#yellowButton {
+    width: 30vw;
+    height: 30vh;
+    background-color: yellow;
+}
+
+#greenButton {
+    width: 30vw;
+    height: 30vh;
+    background-color: green;
+}
+
+#redButton {
+    width: 30vw;
+    height: 30vh;
+    background-color: red;
+}
+
+
+#beginGame {
+    width: 100%;
+    max-width: 100%;
     text-align: center;
-    padding: 2px;
-    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 20.5vh;
 }
 
+#btn {
+    width: 20vw;
+    height: 20vh;
+    border-radius: 50%;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 3rem;
+}
+
+#tryAgain {
+    display: none;
+}
