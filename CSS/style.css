@@ -1,70 +1,36 @@
-#gameTop {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    max-width: 100%;
-    margin: auto;
-    position: absolute;
-
-}
-#gameBottom {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    max-width: 100%;
-    margin: auto;
-    position: absolute;
-}
-
-#blueButton {
-    width: 30px;
-    height: 30px;
-    background-color: blue;
-}
-
-#yellowButton {
-    width: 30px;
-    height: 30px;
-    background-color: yellow;
-}
-
-#greenButton {
-    width: 30px;
-    height: 30px;
-    background-color: green;
-}
-
-#redButton {
-    width: 30px;
-    height: 30px;
-    background-color: red;
-}
-
-
-#beginGame {
-    width: 100%;
-    max-width: 100%;
+h1 {
+    font-family: "Comic Sans MS";
+    font-size: xx-large;
     text-align: center;
-    position: absolute;
-    z-index: 1;
-    top: 20.5vh;
 }
 
-#btn1 {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: lightskyblue;
-    color: darkslategray;
-    font-size: 3rem;
+#green {
+    border: dotted lightgreen 2px;
+    background-color: green;
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
 }
 
-#btn2 {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: lightskyblue;
-    color: darkslategray;
-    font-size: 3rem;
+#red {
+    border: dotted lightcoral 2px;
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    ma
+}
+
+#blue {
+    border: dotted lightskyblue 2px;
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+}
+
+#yellow {
+    border: dotted lightyellow 2px;
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
 }
 
