@@ -8,6 +8,10 @@ h1 {
     text-align: center;
 }
 
+div {
+    display: flex;
+}
+
 #greenButton {
     border: dotted lightgreen 2px;
     background-color: green;
@@ -38,6 +42,7 @@ h1 {
     width: 400px;
     height: 400px;
     margin-left: 970px;
+    flex-basis: auto;
 }
 
 #begin {
