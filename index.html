@@ -1,66 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <title>Simon Says</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="JS/simon.js">
 </head>
 <body>
-<div class="frame">
-
-    <div class="colorbtn btn_1">
-        <audio id="audio1" src="http://free-sounds.net/sound-files/special-effects/BOTTLE_B.WAV">
-        </audio>
-    </div>
-    <div class="colorbtn btn_2">
-        <audio id="audio2" src="http://free-sounds.net/sound-files/special-effects/PLINK.WAV">
-        </audio>
-    </div>
-    <div class="colorbtn btn_3">
-        <audio id="audio3" src="http://free-sounds.net/sound-files/special-effects/POP.WAV">
-        </audio>
-    </div>
-    <div class="colorbtn btn_4">
-        <audio id="audio4" src="http://free-sounds.net/sound-files/special-effects/TINK.WAV">
-        </audio>
-    </div>
-    <div id="center_out">
-        <div id="center_in_1">
-            <div id="center_in_2">
-                <div id="box_1"></div>
-                <h1>Simon Says</h1>
-                <div class="btn_wrap">
-                    <div class="btn_container">
-                        <div id="counter">
-                            <span id="count">- -</span>
-                        </div>
-
-                    </div>
-                    <div class="btn_container">
-                        <div id="start"></div>
-                        START
-                    </div>
-                    <div class="btn_container">
-                        <div id="strict">
-                            <div class="led"></div>
-                        </div>
-                    </div>
-                    <div id="onoff">
-                        <div class="switch">
-                            <div class="switch_triangle_top"></div>
-                            <div class="switch_triangle_bot"></div>
-                            <div class="switch_line_1"></div>
-                            <div class="switch_line_2"></div>
-                            <div class="switch_line_3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<div id="gameBoard">
+<button id="redButton" class="btn"></button><button id="yellowButton" class="btn"></button><button id="greenButton" class="btn"></button><button id="blueButton" class="btn"></button>
 </div>
-
+<div id="middle">
+    <p id="counter">0</p>
+</div>
+<div id="commands">
+    <button id="start">Begin!</button>
+    <button id="reset">Try Again!</button>
+</div>
 </body>
 </html>
