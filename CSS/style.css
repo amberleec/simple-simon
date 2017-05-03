@@ -1,3 +1,7 @@
+body {
+    background-color: wheat;
+}
+
 h1 {
     font-family: "Comic Sans MS";
     font-size: xx-large;
@@ -9,7 +13,7 @@ h1 {
     background-color: green;
     width: 400px;
     height: 400px;
-    margin-left: 500px;
+    margin-left: 570px;
 }
 
 #redButton {
@@ -17,7 +21,7 @@ h1 {
     background-color: red;
     width: 400px;
     height: 400px;
-    margin-left: 500px;
+    margin-left: 570px;
 }
 
 #blueButton {
@@ -25,8 +29,8 @@ h1 {
     background-color: blue;
     width: 400px;
     height: 400px;
-    margin-left: 905px;
-    margin-top: -809px;
+    margin-left: 970px;
+    margin-bottom: -800px;
 }
 
 #yellowButton {
@@ -34,6 +38,19 @@ h1 {
     background-color: yellow;
     width: 400px;
     height: 400px;
-    margin-left: 905px;
+    margin-left: 970px;
 }
+
+#begin {
+    margin-top: 50px;
+    float: right;
+    margin-right: 930px;
+}
+
+#tryAgain {
+    margin-top: 30px;
+    float: right;
+    margin-right: 920px;
+}
+
 
