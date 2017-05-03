@@ -12,10 +12,6 @@
         level: 0
     };
 
-    var userSeq = [];
-
-
-
     function newSeq(){
         game.currentSeq.push(game.possibleSeq[(Math.floor(Math.random()*4))]);
         console.log(game.currentSeq);
