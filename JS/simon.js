@@ -13,27 +13,7 @@ var litTiles = [];
 
 function sequence () {
     litTiles.push(Math.floor(Math.random()*4));
-    lightUp()
 }
-//
-// function lightUp() {
-//
-// }
-// //     for (var i = 0; i < litTiles.length; i++) {
-// //         id = "#" + litTiles[i];
-// //         $(id).animate({
-// //             opacity: 0.5
-// //         }, litTiles[i] * 800).animate({
-// //             opacity: 1
-// //         }, 100)
-// //     }
-// // }
-//
-// $('.play').on("click", function() {
-//     // if(0
-//     sequence();
-//     setTimeout(lightUp(tiles), 1000);
-// })
 
     $('.colors').click(function () {
         if ($(this).('id') === tiles.sequence[userSeq]) {
