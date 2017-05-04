@@ -1,56 +1,56 @@
-body {
-    background-color: wheat;
-}
-
 h1 {
     font-family: "Comic Sans MS";
-    font-size: xx-large;
+}
+
+h4 {
+    font-family: "Comic Sans MS";
+}
+.container{
+    height: 450px;
+    width: 450px;
+    margin: 0 auto;
     text-align: center;
 }
+.square{
+    height: 200px;
+    width: 200px;
+    float: left;
 
-#greenButton {
-    border: dotted lightgreen 2px;
+}
+
+.redButton{
+    background-color:red;
+    border-radius: 100px 0 0 0;
+
+}
+
+.greenButton{
     background-color: green;
-    width: 400px;
-    height: 400px;
-    margin-left: 570px;
+    border-radius: 0 100px 0 0;
+
 }
 
-#redButton {
-    border: dotted lightcoral 2px;
-    background-color: red;
-    width: 400px;
-    height: 400px;
-    margin-left: 570px;
-}
-
-#blueButton {
-    border: dotted lightskyblue 2px;
+.blueButton{
     background-color: blue;
-    width: 400px;
-    height: 400px;
-    margin-left: 970px;
+    border-radius: 0 0 0 100px;
 }
 
-#yellowButton {
-    border: dotted lightyellow 2px;
+.yellowButton{
     background-color: yellow;
-    width: 400px;
-    height: 400px;
-    margin-left: 970px;
-    flex-basis: auto;
+    border-radius: 0 0 100px 0;
 }
-
-#begin {
-    margin-top: 50px;
-    float: right;
-    margin-right: 930px;
-}
-
-#tryAgain {
-    margin-top: 30px;
-    float: right;
-    margin-right: 920px;
+.play{
+    height: 0;
+    width: 0;
+    border-color: transparent black transparent transparent;
+    border-style:solid;
+    border-width: 0 50px 50px 50px;
+    transform: rotate(45deg);
+    bottom: 100px;
+    cursor: pointer;
+    position: relative;
+    top: 208px;
+    left: 115px;
 }
 
 
