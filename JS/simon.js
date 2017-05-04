@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 var tiles = [1,2,3,4];
 var litTiles = [];
-var id;
+
 
 
 function sequence () {
